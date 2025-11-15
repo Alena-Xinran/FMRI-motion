@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual env
+.venv/
+venv/
+env/
+
+# Data and outputs
+data/
+outputs/
+*.nii
+*.nii.gz
+*.npy
+
+# Checkpoints / models
+*.pth
+*.pt
+
+# Third-party repos / big stuff
+RAFT/
+
+# IDE
+.idea/
+.vscode/
