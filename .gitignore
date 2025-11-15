@@ -1,28 +1,17 @@
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
+# 不上传的大文件目录
+data/ABIDE_pcp/
+RAFT/models/
 
-# Virtual env
+# 虚拟环境（很大，没必要上传）
 .venv/
 venv/
 env/
 
-# Data and outputs
-data/
+# 运行结果（可选，不想上传可以加上）
 outputs/
-*.nii
-*.nii.gz
-*.npy
 
-# Checkpoints / models
-*.pth
-*.pt
-
-# Third-party repos / big stuff
-RAFT/
-
-# IDE
-.idea/
-.vscode/
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
