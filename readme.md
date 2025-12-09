@@ -2,7 +2,7 @@
 
 This project investigates **zero-shot motion detection** in fMRI by treating 4D volumes as 2D video streams. We benchmark computer vision methods ranging from statistical baselines to state-of-the-art Deep Learning models.
 
-![Workflow](figures/pipeline_diagram.png)
+![Workflow](model.png)
 
 ## 📉 Key Findings: Occam's Razor
 Our experiments on the ABIDE dataset ($N=50$) reveal an inverse relationship between complexity and performance:
