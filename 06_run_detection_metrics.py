@@ -17,7 +17,7 @@ if not os.path.exists(RESULTS_DIR):
     os.makedirs(RESULTS_DIR)
 
 print("Loading dataset for Detection Evaluation...")
-# 跑前 10 个做快速验证，或者 50 个做完整版
+
 abide = datasets.fetch_abide_pcp(data_dir=RAW_DIR, pipeline='cpac', quality_checked=True, n_subjects=10)
 
 pheno_data = abide.phenotypic
@@ -26,9 +26,7 @@ sub_ids = pheno_data['SUB_ID'] if isinstance(pheno_data, pd.DataFrame) else phen
 comparison_rows = []
 
 def get_binary_spikes(signal, n_std=2.0):
-    """
-    使用 Mean + N*STD 作为阈值，将信号转换为二值 (0 或 1)
-    """
+
     threshold = np.mean(signal) + n_std * np.std(signal)
     binary = (signal > threshold).astype(int)
     return binary, threshold
