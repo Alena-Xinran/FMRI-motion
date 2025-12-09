@@ -126,7 +126,7 @@ for i, img_path in enumerate(abide.func_preproc[:10]):
         'TVL1_Time': time_tvl1
     })
 
-# Convert to DataFrame and Average
+
 df_res = pd.DataFrame(results_table)
 df_avg = df_res.mean(numeric_only=True)
 
@@ -137,5 +137,5 @@ print(f"Naive Diff Correlation : {df_avg['Naive_Corr']:.4f} | Time: {df_avg['Nai
 print(f"Farneback Correlation  : {df_avg['Farneback_Corr']:.4f} | Time: {df_avg['Farneback_Time']:.4f}s")
 print(f"TV-L1 (Yours) Correlation: {df_avg['TVL1_Corr']:.4f} | Time: {df_avg['TVL1_Time']:.4f}s")
 
-# Save detailed results
+
 df_res.to_csv(os.path.join(COMPARISON_DIR, 'baseline_comparison.csv'), index=False)
