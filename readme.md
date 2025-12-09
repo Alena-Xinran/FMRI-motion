@@ -85,8 +85,3 @@ python 09_subgroup_analysis.py
 - `results/`: Raw CSV outputs from motion estimators.
 - `figures/`: Final plots (Correlation distributions, Efficiency curves, Trace alignments).
 - `comparison_results/`: Evaluation metrics.
-
----
-
-## 👥 Author
-Alena-Xinran
